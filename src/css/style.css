@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+
+.product-card {
+    max-width: 750px;
+    display: flex;
+    border-radius: 12px;
+    background-color: var(--White);
+}
+
+.product-card picture {
+    min-width: 50%;
+}
+
+.product-card picture .image {
+    width: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.product-card .info {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.product-card .info .product-type,
+.product-card .info .product-name,
+.product-card .info .description {
+    margin-bottom: 30px;
+}
+
+.product-card .info .product-type {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+
+.product-card .info .product-name {
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--Very-dark-blue);
+}
+
+.product-card .info .description {
+    line-height: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue)
+}
+
+.product-card .info .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-card .info .price .discount-price {
+    padding-right: 30px;
+    font-family: "Fraunces", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+}
+
+.product-card .info .price .standard-price {
+    text-decoration: line-through;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+
+.product-card .btn-product-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--Dark-cyan);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--White);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card .btn-product-add:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+.product-card .btn-product-add p {
+    padding-left: 15px;
+}
